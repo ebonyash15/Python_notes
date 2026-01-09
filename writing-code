@@ -1,0 +1,53 @@
+# a # comments out the rest of the line
+# all indentations are four spaces
+
+
+"""This is a doc string and will come up if someone hovers over a method name. It provides greater context than just commenting out a line.
+Subheadings:
+    The doc trinng allows sub headings and paragraphs but the indentation is in line with the opeining quotes.
+It begins and ends with triple quotes."""
+
+'''This is also a doc string. First line is about 80 character quick synopsis
+The first line ends in a period
+Subsequent lines are a summary.
+The triple quotes can be singles or doubles.'''
+
+
+# variable_names use snake_case
+
+f"This string contains a {variable} or {number}." #formatted string, allows inserting numbers and variables
+
+#types of variable contents: integer, float, string, boolean
+int() #convert to integer (will round down, boolean becomes 1=True 0=False)
+float() #convert to float (decimal)
+str() #convert to string
+bool() #convert to boolean (data present = True, 0 or empty = False)
+dict[,]
+
+#type annotations, labels what a variable should accept as values, makes large code faster. Do in establishment variable_name: typeAnnotation = value
+
+print(type(variable_name)) #shows what type a variable is: <class 'bool'>
+
+"""operators:
+== equality operator, is equal to
+!= inequality operator, is not equall to
+>= greater than or equal to
+<= less than or equal to
++ addition (will add numbers or print strings one after another)
+    print("2"+"3") > 23 
+    or print(2+3) > 5 
+    but print(2+"3") > error. must use f"{2}+3"
+- subtraction (only works on int and float)
+* multiplication (only works on int and float)
+/ division (only works on int and float)"""
+
+# booleans rely on and output:   True   and   False
+
+
+input() 
+#gets input from the user, can show the user a string prompt (remember to end with a blank space for readability). 
+#store it into a variable to reuse this info later.
+user_input=input("What is your name? ")
+
+
+
