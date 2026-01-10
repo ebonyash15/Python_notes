@@ -82,6 +82,8 @@ if True:
     print("This code block runs when condition met.")
     print("Multpile lines must be equally indented.")
 print ("Non-indented lines always run. The end statement has already closed.")
+if True:
+    print("This code block runs when condition met.")
 
 if False:
     print("This code block gets skipped when the condition is true.")
