@@ -1,6 +1,11 @@
-# a # comments out the rest of the line
-# all indentations are four spaces
+#ettiquite:
+#all indentations are four spaces
+#prioritize readability
+#put spaces around operators
 
+
+#adding context:
+#a # comments out the rest of the line
 
 """This is a doc string and will come up if someone hovers over a method name. It provides greater context than just commenting out a line.
 Subheadings:
@@ -13,22 +18,33 @@ Subsequent lines are a summary.
 The triple quotes can be singles or doubles.'''
 
 
-# variable_names use snake_case
+"""variables
+variable_names use snake_case
 
-f"This string contains a {variable} or {number}." #formatted string, allows inserting numbers and variables
+types of variable contents: integer, float, string, boolean
 
-#types of variable contents: integer, float, string, boolean
-int() #convert to integer (will round down, boolean becomes 1=True 0=False)
-float() #convert to float (decimal)
-str() #convert to string
-bool() #convert to boolean (data present = True, 0 or empty = False)
-dict[,]
+converting variable types
+    int() #convert to integer (will round down, boolean becomes 1=True 0=False)
+    float() #convert to float (decimal)
+    str() #convert to string
+    bool() #convert to boolean (data present = True, 0 or empty = False)
+    dict[,]
 
-#type annotations, labels what a variable should accept as values, makes large code faster. Do in establishment variable_name: typeAnnotation = value
+formatted strings allow combining different types in one print statement or variable (for printing)
+    f"This string contains a {variable} or {number}." 
 
-print(type(variable_name)) #shows what type a variable is: <class 'bool'>
+type annotations, labels what a variable should accept as values, makes large code faster. Do in establishment variable_name: typeAnnotation = value
 
-"""operators:
+self-assigning - allows tracking of changes over time
+    variable = "value"
+    variable = variable + 1
+    can also be written:
+    variable = "value"
+    variable += 1
+"""
+
+
+"""operators
 == equality operator, is equal to
 != inequality operator, is not equall to
 >= greater than or equal to
@@ -40,9 +56,20 @@ print(type(variable_name)) #shows what type a variable is: <class 'bool'>
 - subtraction (only works on int and float)
 * multiplication (only works on int and float)
 / division (only works on int and float)"""
+and - used in if statements, ifel statements, and while loops (only runs if both conditions are true)
+or - used in if statements, ifel statements, and while loops (only runs if a condition is true)
+booleans accept/output:   True   and   False
++= self-assignment with addition (strings or numbers)
+-= self-assignment with subtraction (strings or numbers)
+*= self-assignment with multiplication (numbers only)
+/= self-assignment with division (numbers only, will atomatically change int to float)
+"""
 
-# booleans rely on and output:   True   and   False
 
+#functions
+print() #displays content in console. Must be same types or in formatted string.
+
+print(type(variable_name)) #shows what type a variable is: <class 'bool'>
 
 input() 
 #gets input from the user, can show the user a string prompt (remember to end with a blank space for readability). 
@@ -50,6 +77,11 @@ input()
 user_input=input("What is your name? ")
 
 
+#if statements
+if True:
+    print("This code block runs when condition met.")
+    print("Multpile lines must be equally indented.")
+print ("Non-indented lines always run. The end statement has already closed.")
 if True:
     print("This code block runs when condition met.")
 
@@ -68,5 +100,37 @@ if condition_one:
     print("The condition has been met.")
 else:
     print("The condition was not met in this if/else statement.")
+
+if condition_one:
+    print("First condition met")
+ifel condition_two:
+    print("First condition not met, second condition met.")
+else:
+    print("No conditions met.")
+
+
+#loops
+#infinite loops will crash your code. Always close a loop with a condition change or counter.
+
+condition_met = True
+while condition_met:
+    print("This only goes once.")
+    condition_met = False
+
+counter = 1
+while counter < 6:
+    print("Gonna see this 5 times.")
+    counter += 1
+
+for i in range(4)
+    print("Getting four lines of this.")
+
+variable("more ")
+for i in range(3)
+    print(variable)
+"""that last for loop outputs:
+    more 
+    more more
+    more more more """
 
 
