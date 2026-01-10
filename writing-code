@@ -50,4 +50,23 @@ input()
 user_input=input("What is your name? ")
 
 
+if True:
+    print("This code block runs when condition met.")
+
+if False:
+    print("This code block gets skipped when the condition is true.")
+
+if variable_name != input_value:
+    print("Not Quite")
+if variable_name == input_value:
+    print("Great work!")
+
+if not variable_name:
+    print(f"This is not {variable_name}.")
+
+if condition_one:
+    print("The condition has been met.")
+else:
+    print("The condition was not met in this if/else statement.")
+
 
