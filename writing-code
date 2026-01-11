@@ -133,4 +133,43 @@ for i in range(3)
     more more
     more more more """
 
+#continue skips the current code block and moves to th enext iteration
+list = ["apples", "pie", "cake"]
+for item in list:
+    if item == "pie":
+        continue
+    print(f"Don't forget to buy: {item}.")
+#outputs: Don't forget to buy apples, cake.
+
+#break exits the loop early. Else statements do not read if break is triggered.
+for i in range(1, 11):
+    if i == 5:
+        break
+    print(1)
+else:
+    print("Loop has ended.")
+#output:
+#1
+#2
+#3
+#4
+
+#looping an array:
+list = ["one", "two", "three"]
+for item in list:
+    print(item)
+else:
+    print ("You can count to three!")
+#output:
+#one
+#two
+#three
+#You can count to three!
+
+
+
+
+
+    
+
 
