@@ -167,6 +167,44 @@ else:
 #You can count to three!
 
 
+#arrays:
+#string outputs are in ' ' --outpput: ['Zero', 'One', 'Two']
+
+blank_list = []
+
+list = [1,2,3,4,5]
+print(list[1]) #access the array value
+#output: 2
+
+#list unchanged
+list[1] = 6 #update array value
+#list = [1,6,3,4,5]
+
+#original list
+list.append(6) #add value to end of array, one at a time
+#list = [1,2,3,4,5,6]
+
+#original list
+list.insert(3,6) #add value to the array at specified index, one at a time
+#list = [1,2,3,6,4,5,]
+
+#original list
+list.pop() #drops off last index
+
+#original list
+list.pop(0) #drops specified index
+
+#original list [1,2,3,4,5]
+len(list) #length of list
+#output: 5
+
+max(list) #returns highest value in array. Numbers only.
+
+min(list) #returns lowest value in array. Numbers only.
+
+list.sort() #organizes an array small>large or alphabetical
+
+
 
 
 
