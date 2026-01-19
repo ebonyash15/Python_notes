@@ -53,6 +53,7 @@ self-assigning - allows tracking of changes over time
     print("2"+"3") > 23 
     or print(2+3) > 5 
     but print(2+"3") > error. must use f"{2}+3"
+    adding data sets will always append in order addded ([1,2,3]+[3,2,1] = [1,2,3,3,2,1])
 - subtraction (only works on int and float)
 * multiplication (only works on int and float)
 / division (only works on int and float)"""
@@ -67,6 +68,12 @@ booleans accept/output:   True   and   False
 
 
 #functions
+def function_name(parameters, one_or_more): #must name the function and what parameters it accepts. 
+    #Best practices: Names with is/was/has give booleans, get/combine/calculate give values
+    #fucntion contents get indented
+    return variable_or_function_results #to get a value out of the function (rather than printing)
+function_name("Parameter", "Values")  #call function with filled parameters 
+
 print() #displays content in console. Must be same types or in formatted string.
 
 print(type(variable_name)) #shows what type a variable is: <class 'bool'>
@@ -203,6 +210,17 @@ max(list) #returns highest value in array. Numbers only.
 min(list) #returns lowest value in array. Numbers only.
 
 list.sort() #organizes an array small>large or alphabetical
+
+sum(list_name) #adds all of a list's values
+
+list.count("match") #counts how often "match" is in the list values (works with any value type)
+
+"search" in list #returns boolean for if "search" is in the list values
+
+
+
+
+
 
 
 
